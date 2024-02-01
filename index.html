@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.css"
+    />
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/MediaQuery.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>VEGA</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg shadow">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/Logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mb-lg-0 mb-3"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav gap-lg-4 gap-2 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Roadmaps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Blogs</a>
+            </li>
+          </ul>
+
+          <ul class="nav-btns">
+            <li><a href="#" class="btn">Sign in</a></li>
+            <li><a href="#" class="btn primary-btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="container flex-lg-row flex-column">
+      <div class="head pt-2">
+        <h1>
+          Grow your <span class="hColor">skill</span> to advance your
+          <span><img src="assets/images/Star3.jpg" alt="" /></span>
+          <span class="hColor">career</span>
+          path.
+        </h1>
+        <p>
+          Vega offers mentorship, courses, and a customized roadmaps whatever
+          your level . It's a comprehensive platform for goal-oriented
+          individuals.
+        </p>
+      </div>
+      <div class="panels">
+        <div
+          class="panel active"
+          style="background-image: url('assets/images/heroPerson1.jpg')"
+        >
+          <div class="panel-description">
+            <h3>Mariam Gamal</h3>
+            <p>Data Analyst Mentor</p>
+          </div>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url('assets/images/heroPerson2.jpg')"
+        >
+          <div class="panel-description">
+            <h3>sami Ali</h3>
+            <p>Front-End Mentor</p>
+          </div>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url('assets/images/heroPerson3.jpg')"
+        >
+          <div class="panel-description">
+            <h3>Ahmed Yassin</h3>
+            <p>Back-End Mentor</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+    <div class="features">
+      <div class="container">
+        <h2 class="fw-bold pb-5">4 Reasons to choose Vega</h2>
+        <div class="featureDivs">
+          <a href="#">
+            <div class="feature container">
+              <img
+                src="assets/images/featuresSection/mentorIcon.png"
+                alt="mentorIcon"
+              />
+              <h5>Mentorship</h5>
+              <p>
+                Vega provides mentorship services to help individuals achieve
+                their personal and professional goals.
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="feature container">
+              <img
+                src="assets/images/featuresSection/coursesIcon.png"
+                alt="coursesIcon"
+              />
+              <h5>Online Courses</h5>
+              <p>
+                Our online courses offer flexible scheduling, enabling you to
+                learn at your own pace.
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="feature container">
+              <img
+                src="assets/images/featuresSection/roadmapIcon.png"
+                alt="roadmapIcon"
+              />
+              <h5>Customized Roadmaps</h5>
+              <p>
+                Our customized roadmap service is tailored to your unique goals
+                and needs, providing you with a clear.
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="feature container">
+              <img
+                src="assets/images/featuresSection/jobIcon.png"
+                alt="jobsIcon"
+              />
+              <h5>Job Recommendation</h5>
+              <p>
+                Our job recommendation service leverages advanced algorithms to
+                match your skills and preferences.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURSES -->
+    <div class="courses container my-5 pt-5">
+      <div class="feature__header">
+        <h2 class="m-0">Our Courses</h2>
+        <a href="#">Explore all</a>
+      </div>
+      <div class="container pt-4">
+        <div class="glide" id="glide1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="card rounded-4 mb-3">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        class="playIcon"
+                        src="assets/images/coursesSection/playCourseIcon.png"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/coursesSection/coursesPerson.jpg"
+                        class="card-img-top rounded-top-4"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">
+                        Html, Css and JavaScript for beginners
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-4">
+                        Learn the fundementals of Front End to make interactive
+                        website......
+                      </p>
+                      <div class="card-text border-bottom pb-1">
+                        <div class="d-flex justify-content-between">
+                          <p>
+                            by
+                            <a href="#" class="fw-bold text-decoration-none"
+                              >Ahmed Gamal</a
+                            >
+                          </p>
+                          <p class="fw-bold">100Egp</p>
+                        </div>
+                      </div>
+                      <div
+                        class="card-text d-flex justify-content-between pt-3"
+                      >
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/userIcon.png"
+                            alt=""
+                          />
+                          100
+                        </p>
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/starIcon.png"
+                            alt=""
+                          />
+                          5 (90 Students)
+                        </p>
+                        <a href="#"
+                          ><img
+                            src="assets/images/coursesSection/arrowIcon.png"
+                            alt="arrowCourses"
+                            class="card__img"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4 mb-3">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        class="playIcon"
+                        src="assets/images/coursesSection/playCourseIcon.png"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/coursesSection/coursesPerson.jpg"
+                        class="card-img-top rounded-top-4"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">
+                        Html, Css and JavaScript for beginners
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-4">
+                        Learn the fundementals of Front End to make interactive
+                        website......
+                      </p>
+                      <div class="card-text border-bottom pb-1">
+                        <div class="d-flex justify-content-between">
+                          <p>
+                            by
+                            <a href="#" class="fw-bold text-decoration-none"
+                              >Ahmed Gamal</a
+                            >
+                          </p>
+                          <p class="fw-bold">100Egp</p>
+                        </div>
+                      </div>
+                      <div
+                        class="card-text d-flex justify-content-between pt-3"
+                      >
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/userIcon.png"
+                            alt=""
+                          />
+                          100
+                        </p>
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/starIcon.png"
+                            alt=""
+                          />
+                          5 (90 Students)
+                        </p>
+                        <a href="#"
+                          ><img
+                            src="assets/images/coursesSection/arrowIcon.png"
+                            alt="arrowCourses"
+                            class="card__img"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4 mb-3">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        class="playIcon"
+                        src="assets/images/coursesSection/playCourseIcon.png"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/coursesSection/coursesPerson.jpg"
+                        class="card-img-top rounded-top-4"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">
+                        Html, Css and JavaScript for beginners
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-4">
+                        Learn the fundementals of Front End to make interactive
+                        website......
+                      </p>
+                      <div class="card-text border-bottom pb-1">
+                        <div class="d-flex justify-content-between">
+                          <p>
+                            by
+                            <a href="#" class="fw-bold text-decoration-none"
+                              >Ahmed Gamal</a
+                            >
+                          </p>
+                          <p class="fw-bold">100Egp</p>
+                        </div>
+                      </div>
+                      <div
+                        class="card-text d-flex justify-content-between pt-3"
+                      >
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/userIcon.png"
+                            alt=""
+                          />
+                          100
+                        </p>
+                        <p>
+                          <img
+                            src="assets/images/coursesSection/starIcon.png"
+                            alt=""
+                          />
+                          5 (90 Students)
+                        </p>
+                        <a href="#"
+                          ><img
+                            src="assets/images/coursesSection/arrowIcon.png"
+                            alt="arrowCourses"
+                            class="card__img"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENTORS -->
+    <div class="courses container my-5 pt-5">
+      <div class="feature__header">
+        <h2 class="m-0">Our Mentors</h2>
+        <a href="#">Explore all</a>
+      </div>
+      <div class="container pt-4">
+        <div class="glide" id="glide1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/mentorsSection/mentorPerson.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">Ahmed Gamal</h5>
+                      <p class="card-text">
+                        <img
+                          src="assets/images/mentorsSection/briefcase.png"
+                          alt=""
+                          class="mb-1"
+                        />
+                        Senior data analyst at Google
+                      </p>
+                      <p class="card-text pb-4">
+                        <img
+                          src="assets/images/mentorsSection/messages.png"
+                          alt=""
+                        />
+                        5 Sessions
+                        <a href="#" class="text-decoration-none"
+                          >(20 Reviews)</a
+                        >
+                      </p>
+                      <div
+                        class="card-text border-top d-flex justify-content-between"
+                      >
+                        <div class="exp mx-4 pt-4">
+                          <p class="mb-0">Experience</p>
+                          <p class="fw-bold">5 years</p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="avg mx-3 pt-4">
+                          <p class="mb-0">Avg attendance</p>
+                          <p class="fw-bold">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/mentorsSection/mentorPerson.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">Ahmed Gamal</h5>
+                      <p class="card-text">
+                        <img
+                          src="assets/images/mentorsSection/briefcase.png"
+                          alt=""
+                          class="mb-1"
+                        />
+                        Senior data analyst at Google
+                      </p>
+                      <p class="card-text pb-4">
+                        <img
+                          src="assets/images/mentorsSection/messages.png"
+                          alt=""
+                        />
+                        5 Sessions
+                        <a href="#" class="text-decoration-none"
+                          >(20 Reviews)</a
+                        >
+                      </p>
+                      <div
+                        class="card-text border-top d-flex justify-content-between"
+                      >
+                        <div class="exp mx-4 pt-4">
+                          <p class="mb-0">Experience</p>
+                          <p class="fw-bold">5 years</p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="avg mx-3 pt-4">
+                          <p class="mb-0">Avg attendance</p>
+                          <p class="fw-bold">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/mentorsSection/mentorPerson.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <h5 class="card-title pb-2">Ahmed Gamal</h5>
+                      <p class="card-text">
+                        <img
+                          src="assets/images/mentorsSection/briefcase.png"
+                          alt=""
+                          class="mb-1"
+                        />
+                        Senior data analyst at Google
+                      </p>
+                      <p class="card-text pb-4">
+                        <img
+                          src="assets/images/mentorsSection/messages.png"
+                          alt=""
+                        />
+                        5 Sessions
+                        <a href="#" class="text-decoration-none"
+                          >(20 Reviews)</a
+                        >
+                      </p>
+                      <div
+                        class="card-text border-top d-flex justify-content-between"
+                      >
+                        <div class="exp mx-4 pt-4">
+                          <p class="mb-0">Experience</p>
+                          <p class="fw-bold">5 years</p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="avg mx-3 pt-4">
+                          <p class="mb-0">Avg attendance</p>
+                          <p class="fw-bold">100%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOGS -->
+    <div class="blogs container my-5 pt-5">
+      <div class="feature__header">
+        <h2 class="m-0">Our Blogs & Articles</h2>
+        <a href="#">Explore all</a>
+      </div>
+      <div class="container pt-4">
+        <div class="glide" id="glide1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/blogsSection/blogImg.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2 text">
+                          Feature Selection Techniques in Machine Learning
+                        </h5>
+                      </a>
+                      <p class="card-text text-muted">
+                        We’ll talk about supervised and un-supervised feature
+                        selection techniques. Learn how to use them and .......
+                      </p>
+                      <div class="card-text pb-4 d-flex gap-2 align-center">
+                        <a href="#">
+                          <img
+                            src="assets/images/blogsSection/blogPerson.jpg"
+                            alt=""
+                          />
+                        </a>
+
+                        <div class="blog__writer">
+                          <a href="#" class="text-decoration-none">
+                            <p class="fw-bold m-0">Ahmed Gamal</p>
+                          </a>
+                          <p class="m-0">23 sep,2023 . 5 min read</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/blogsSection/blogImg.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2 text">
+                          Feature Selection Techniques in Machine Learning
+                        </h5>
+                      </a>
+                      <p class="card-text text-muted">
+                        We’ll talk about supervised and un-supervised feature
+                        selection techniques. Learn how to use them and .......
+                      </p>
+                      <div class="card-text pb-4 d-flex gap-2 align-center">
+                        <a href="#">
+                          <img
+                            src="assets/images/blogsSection/blogPerson.jpg"
+                            alt=""
+                          />
+                        </a>
+
+                        <div class="blog__writer">
+                          <a href="#" class="text-decoration-none">
+                            <p class="fw-bold m-0">Ahmed Gamal</p>
+                          </a>
+                          <p class="m-0">23 sep,2023 . 5 min read</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/blogsSection/blogImg.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2 text">
+                          Feature Selection Techniques in Machine Learning
+                        </h5>
+                      </a>
+                      <p class="card-text text-muted">
+                        We’ll talk about supervised and un-supervised feature
+                        selection techniques. Learn how to use them and .......
+                      </p>
+                      <div class="card-text pb-4 d-flex gap-2 align-center">
+                        <a href="#">
+                          <img
+                            src="assets/images/blogsSection/blogPerson.jpg"
+                            alt=""
+                          />
+                        </a>
+
+                        <div class="blog__writer">
+                          <a href="#" class="text-decoration-none">
+                            <p class="fw-bold m-0">Ahmed Gamal</p>
+                          </a>
+                          <p class="m-0">23 sep,2023 . 5 min read</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROADMAPS -->
+    <div class="roadmaps container my-5 pt-5">
+      <div class="feature__header">
+        <h2 class="m-0">Our Blogs & Articles</h2>
+        <a href="#">Explore all</a>
+      </div>
+      <div class="container pt-4">
+        <div class="glide" id="glide2">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/roadmapSection/backendRoadmap.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2 text">Back-End Roadmap</h5>
+                      </a>
+                      <p class="card-text text-muted pb-3">
+                        Empowering Data Journeys: Navigating the Data Science
+                        Roadmap to Proficiency - A Strategic Guide for Aspiring
+                        Data Scientists.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/roadmapSection/frontendRoadmap.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2">Front-End Roadmap</h5>
+                      </a>
+                      <p class="card-text text-muted pb-3">
+                        Empowering Data Journeys: Navigating the Data Science
+                        Roadmap to Proficiency - A Strategic Guide for Aspiring
+                        Data Scientists.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/roadmapSection/datascienceRoadmap.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2">Data Science Roadmap</h5>
+                      </a>
+                      <p class="card-text text-muted pb-3">
+                        Empowering Data Journeys: Navigating the Data Science
+                        Roadmap to Proficiency - A Strategic Guide for Aspiring
+                        Data Scientists.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card rounded-4">
+                  <a href="#" class="overflow-hidden">
+                    <div class="card__img">
+                      <img
+                        src="assets/images/roadmapSection/uiuxRoadmap.jpg"
+                        loading="lazy"
+                        class="card-img-top rounded-top-4"
+                      />
+                    </div>
+                  </a>
+                  <div class="container">
+                    <div class="card-body pt-4 pb-2">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="card-title pb-2">Ui Ux Roadmap</h5>
+                      </a>
+                      <p class="card-text text-muted pb-3">
+                        Empowering Data Journeys: Navigating the Data Science
+                        Roadmap to Proficiency - A Strategic Guide for Aspiring
+                        Data Scientists.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section>
+        <div class="container text-center text-md-start my-5 pt-4">
+          <div class="d-md-flex justify-content-between mt-3">
+            <div class="mb-4">
+              <h5 class="mb-3">Platform</h5>
+              <div class="links d-flex flex-column gap-2">
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Mentors</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Courses</a
+                >
+                <a href="#" class="text-decoration-none text-dark">Roadmaps</a>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Jobs</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Become Mentors</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Become Instructor</a
+                >
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-3">Resources</h5>
+              <div class="links d-flex flex-column gap-2">
+                <a href="#!" class="text-decoration-none text-dark">Blogs</a>
+                <a href="#!" class="text-decoration-none text-dark"
+                  >Newsletter</a
+                >
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-3">About</h5>
+              <p>
+                <a href="#!" class="text-decoration-none text-dark">About Us</a>
+              </p>
+            </div>
+
+            <div class="mb-md-0 mb-4">
+              <h5 class="mb-3">Support</h5>
+              <div class="d-flex flex-column gap-2">
+                <a href="#" class="text-decoration-none text-dark">FAQ</a>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+
+            <div class="d-flex flex-column mb-md-0 mb-4">
+              <h5 class="mb-3">Social Media</h5>
+              <div class="media__icons d-flex gap-2 justify-content-center">
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/facebookIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/linkedinIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/youtubeIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/Xicon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <img
+              src="assets/images/footer/Logofooter.png"
+              alt="VegaLogoFooter"
+              class="footerLogo pt-3"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div
+        class="d-md-flex gap-5 p-2 border-top container border-2 border-dark"
+      >
+        <p>Copyrights @ 2023 Vega Inc. All rights reserved</p>
+        <a class="text-decoration-none text-dark" href="#">Privacy policy</a>
+        <a class="text-decoration-none text-dark" href="#">Cookies policy</a>
+        <a class="text-decoration-none text-dark" href="#">Terms</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+      /////////
+      const config = {
+        type: "carousel",
+        startAt: 0,
+        autoplay: 4000,
+        gap: 20,
+        perView: 3,
+        breakpoints: {
+          992: {
+            perView: 2,
+          },
+          768: {
+            perView: 1,
+            autoplay: 4000,
+          },
+        },
+      };
+      const config1 = {
+        type: "carousel",
+        startAt: 0,
+        autoplay: 4000,
+        perView: 4,
+        breakpoints: {
+          992: {
+            perView: 2,
+          },
+          768: {
+            perView: 1,
+            autoplay: 4000,
+          },
+        },
+      };
+      const sliders = document.querySelectorAll("#glide1");
+      const sliders2 = document.querySelectorAll("#glide2");
+      sliders.forEach((item) => {
+        new Glide(item, config).mount();
+      });
+      sliders2.forEach((item) => {
+        new Glide(item, config1).mount();
+      });
+    </script>
+    <script src="assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
