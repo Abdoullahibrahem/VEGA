@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mentorinfo/mentorinfoMedia.css" />
+    <link rel="stylesheet" href="assets/css/mentorinfo/mentorinfo.css" />
+    <link rel="stylesheet" href="assets/css/MediaQuery.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>VEGA - Mentor Info</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg shadow">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand pe-lg-3" href="index.html"
+          ><img src="assets/images/Logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mb-lg-0 mb-3"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav gap-lg-4 gap-2 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Roadmaps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Blogs</a>
+            </li>
+          </ul>
+
+          <ul class="nav-btns">
+            <li><a href="#" class="btn">Sign in</a></li>
+            <li><a href="#" class="btn primary-btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="profile">
+      <div class="container pt-4 pb-2">
+        <!-- breadcrumb -->
+        <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb d-flex gap-2">
+            <li class="breadcrumb-item d-flex gap-2">
+              <img src="assets/images/MentorInfoPage/homeIcon.png" alt="" />
+              <a href="index.html" class="text-decoration-none text-muted"
+                >Home</a
+              >
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-decoration-none text-muted">Mentors</a>
+            </li>
+            <li class="breadcrumb-item fw-bold" aria-current="page">
+              Mariam Gamal
+            </li>
+          </ol>
+        </div>
+        <!-- breadcrumb -->
+        <div class="profile__header pt-5">
+          <div class="mentor__header--info">
+            <div class="mentor__img">
+              <img src="assets/images/heroPerson1.jpg" alt="mentorImage" />
+            </div>
+            <div class="mentor__data">
+              <div
+                class="mentor__data--head d-flex justify-content-between align-items-center"
+              >
+                <h1 class="m-0">Mariam Gamal</h1>
+                <div class="topmentor-bagde d-flex gap-1">
+                  <img
+                    src="assets/images/MentorInfoPage/topMentorBadge.png"
+                    alt=""
+                  />
+                  <p class="m-0 fw-bold">Top Mentor</p>
+                </div>
+              </div>
+              <p class="fs-4">Ux Leader & Career Coach at Ex-Adobe</p>
+              <div class="mentor__data--media d-flex gap-4">
+                <a href="#"
+                  ><img src="assets/images/MentorInfoPage/linkedin.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/MentorInfoPage/X.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile__details gap-5">
+        <div class="container d-lg-flex">
+          <div class="details mb-5">
+            <div class="tabs__container pt-4">
+              <div class="tab__details tab-style tab--active" data-tab="1">
+                <p class="fw-bold tab--active">Overview</p>
+              </div>
+              <div class="tab__details tab-style" data-tab="2">
+                <p class="tab-p">Reviews <span> 60</span></p>
+              </div>
+            </div>
+            <div
+              class="details__content details__content--active details__content--1 pb-5"
+            >
+              <div class="overview d-flex flex-column gap-4 pt-3">
+                <div class="xp">
+                  <p class="m-0">Senior UX Designer @ Instabug</p>
+                  <p class="m-0">5 years of experience in UX Design</p>
+                  <p class="m-0">
+                    Mentoring students and young professionals since 2019
+                  </p>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex gap-2">
+                    <img
+                      src="assets/images/MentorInfoPage/locationIcon.png"
+                      alt="location"
+                    />
+                    <p class="m-0">Egypt</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img
+                      src="assets/images/MentorInfoPage/starIcon.png"
+                      alt="star"
+                    />
+                    <p class="m-0">5.0 (Reviews)</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img
+                      src="assets/images/MentorInfoPage/clockIcon.png"
+                      alt="Time"
+                    />
+                    <p class="m-0">Active today</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img
+                      src="assets/images/MentorInfoPage/message-timeIcon.png"
+                      alt="message-time"
+                    />
+                    <p class="m-0">Usually respond in a half a day</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="details__content details__content--2"></div>
+            <div class="hr mt-5"></div>
+          </div>
+          <div class="sessions pt-4 pb-2">
+            <div class="tabs__container tabs__container--sessions pt-4">
+              <div class="tab tab__sessions tab-style tab--active" data-tab="3">
+                <p class="fw-bold tab--active">Mentorship plans</p>
+              </div>
+              <div class="tab tab__sessions tab-style" data-tab="4">
+                <p class="tab-p fw-bold">sessions</p>
+              </div>
+            </div>
+            <div
+              class="mx-4 mt-3 sessions__content details__content--active details__content--3"
+            >
+              <div class="mentor__plan mb-5">
+                <h4>750 Egp /months</h4>
+                <p class="text-muted">
+                  Best suited for those who need help landing their 1st UX
+                  design job.
+                </p>
+                <div class="d-flex gap-2 mb-3 align-items-center">
+                  <img
+                    src="assets/images/MentorInfoPage/phone.png"
+                    alt="call"
+                  />
+                  <p class="m-0">2 calls per month (60min/call)</p>
+                </div>
+                <div class="d-flex gap-2 mb-3 align-items-center">
+                  <img src="assets/images/MentorInfoPage/chat.png" alt="chat" />
+                  <p class="m-0">Unlimited Q&A via chat</p>
+                </div>
+                <div class="d-flex gap-2 mb-3 align-items-center">
+                  <img src="assets/images/MentorInfoPage/bag.png" alt="bag" />
+                  <p class="m-0">Hands-on support</p>
+                </div>
+                <div class="d-flex gap-2 mb-4 align-items-center">
+                  <img
+                    src="assets/images/MentorInfoPage/blackColor.png"
+                    alt="clock"
+                  />
+                  <p class="m-0">Expect responses in 2 days</p>
+                </div>
+                <button class="mb-3">Apply now</button>
+                <div class="d-flex gap-2 mb-2 align-items-center">
+                  <img src="assets/images/MentorInfoPage/mark.png" alt="mark" />
+                  <p class="m-0 text-muted">Flat fee, no hidden costs</p>
+                </div>
+                <div class="d-flex gap-2 mb-2 align-items-center">
+                  <img src="assets/images/MentorInfoPage/fire.png" alt="fire" />
+                  <p class="m-0 text-muted">
+                    7 day free trial! Cancel anytime.
+                  </p>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    src="assets/images/MentorInfoPage/alert.png"
+                    alt="alert"
+                  />
+                  <p class="m-0 text-muted">Only 1 spot left!</p>
+                </div>
+              </div>
+            </div>
+            <div class="mx-4 mt-3 sessions__content details__content--4">
+              <div class="sessions__plan"></div>
+              <h4>Available sessions</h4>
+              <p class="text-muted">
+                Book 1:1 sessions from the options based on your needs
+              </p>
+              <form action="" class="mb-4">
+                <div class="d-flex align-items-start mb-3">
+                  <input type="radio" name="check" id="1" class="mt-2" />
+                  <label for="1">
+                    <span class="checkmark"></span>
+                    <p class="mb-1">introductory call</p>
+                    <p class="text-muted m-0">30 mins, 150 Egp per sessions</p>
+                  </label>
+                </div>
+                <div class="d-flex align-items-start gap-2 mb-3">
+                  <input type="radio" name="check" id="2" class="mt-2" />
+                  <label for="2">
+                    <span class="checkmark"></span>
+                    <p class="mb-1">Build a career roadmap</p>
+                    <p class="text-muted m-0">30 mins, 150 Egp per sessions</p>
+                  </label>
+                </div>
+                <div class="d-flex align-items-start gap-2 mb-3">
+                  <input type="radio" name="check" id="3" class="mt-2" />
+                  <label for="3">
+                    <span class="checkmark"></span>
+                    <p class="mb-1">Portfolio feedback</p>
+                    <p class="text-muted m-0">
+                      5 mins, 500 Egp, weekly, 3 sessions
+                    </p>
+                  </label>
+                </div>
+                <div class="d-flex align-items-start gap-2 mb-4">
+                  <input type="radio" name="check" id="4" class="mt-2" />
+                  <label for="4">
+                    <span class="checkmark"></span>
+                    <p class="mb-1">Work review</p>
+                    <p class="text-muted m-0">
+                      60 mins, 500 Egp, fortighty, 3 sessions
+                    </p>
+                  </label>
+                </div>
+
+                <button>Book Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white pt-5">
+          <div class="container">
+            <div class="bio mb-5">
+              <h5 class="mb-3">Bio</h5>
+              <p style="font-size: 18px">
+                With 15 years of UX leadership experience, I've helped over 250
+                professionals elevate their career through goal-oriented
+                guidance. From tech giants to startups,<span
+                  id="dots"
+                  style="cursor: pointer; color: #e98016"
+                  onclick="readMore()"
+                >
+                  more...</span
+                ><span id="more" style="display: none">
+                  my work has impacted 20M+ users worldwide, shaping design
+                  organizations, UX teams and users. Born in Iran, raised in
+                  Germany, and living in 10+ countries, my design philosophy is
+                  rooted in embracing diversity and inclusivity. With a
+                  background in Psychology & Design, I offer a holistic
+                  approach, guiding you through mindset, career, and skills to
+                  reach new career heights. Let's embark on this transformative
+                  journey together.</span
+                >
+              </p>
+            </div>
+            <div class="background">
+              <h5 class="mb-4">background</h5>
+              <div class="bg__container d-flex flex-column gap-3 px-5 py-4">
+                <div
+                  class="bg d-flex align-items-center justify-content-between"
+                >
+                  <p class="text-muted">Expertise</p>
+                  <div class="bg-content d-flex gap-3 align-items-center">
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">Design</p>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">
+                        Product Research
+                      </p>
+                    </a>
+                    <p class="px-3 py-2 border rounded-3 fw-bold">+1</p>
+                  </div>
+                </div>
+                <div
+                  class="bg d-flex align-items-center justify-content-between"
+                >
+                  <p class="text-muted">Disciplines</p>
+                  <div class="bg-content d-flex gap-3 align-items-center">
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">
+                        UX Design
+                      </p>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">
+                        Product Design
+                      </p>
+                    </a>
+                    <p class="px-3 py-2 border rounded-3 fw-bold">+3</p>
+                  </div>
+                </div>
+                <div
+                  class="bg d-flex align-items-center justify-content-between"
+                >
+                  <p class="text-muted">Industries</p>
+                  <div class="bg-content d-flex gap-3 align-items-center">
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">
+                        <img
+                          src="assets/images/MentorInfoPage/tech.png"
+                          alt=""
+                        />
+                        Tech
+                      </p>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">
+                        <img
+                          src="assets/images/MentorInfoPage/rocket.png"
+                          alt=""
+                        />
+                        Start Up
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg d-flex align-items-center justify-content-between"
+                >
+                  <p class="text-muted">Fluent in</p>
+                  <div class="bg-content d-flex gap-3 align-items-center">
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">English</p>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                      <p class="px-3 py-2 border rounded-3 fw-bold">German</p>
+                    </a>
+
+                    <p class="px-3 py-2 border rounded-3 fw-bold">+2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experience mt-5">
+              <div class="head d-flex justify-content-between">
+                <h5 class="mb-4">
+                  Experience
+                  <span
+                    class="px-2 rounded-4 text-light fw-normal fs-6"
+                    style="background-color: #e98016"
+                    >9</span
+                  >
+                </h5>
+                <a href="#" class="text-decoration-none" style="color: #e98016"
+                  >View all</a
+                >
+              </div>
+              <div class="xp__container d-flex flex-column gap-3 px-5 py-4">
+                <div
+                  class="xp pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="xp__item d-flex gap-3 align-items-center">
+                    <img src="assets/images/MentorInfoPage/xpBag.jpg" alt="" />
+                    <div class="xp__item--title">
+                      <p class="fw-bold mb-1">UX Consultant</p>
+                      <p class="text-muted m-0">Self employed</p>
+                    </div>
+                  </div>
+                  <p class="xp-date m-0">JAN 2018-PRESENT</p>
+                </div>
+                <div class="hr"></div>
+                <div
+                  class="xp pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="xp__item d-flex gap-3 align-items-center">
+                    <img src="assets/images/MentorInfoPage/xpBag.jpg" alt="" />
+                    <div class="xp__item--title">
+                      <p class="fw-bold mb-1">UX Consultant</p>
+                      <p class="text-muted m-0">Self employed</p>
+                    </div>
+                  </div>
+                  <p class="xp-date m-0">JAN 2018-PRESENT</p>
+                </div>
+                <div class="hr"></div>
+                <div
+                  class="xp pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="xp__item d-flex gap-3 align-items-center">
+                    <img src="assets/images/MentorInfoPage/xpBag.jpg" alt="" />
+                    <div class="xp__item--title">
+                      <p class="fw-bold mb-1">UX Consultant</p>
+                      <p class="text-muted m-0">Self employed</p>
+                    </div>
+                  </div>
+                  <p class="xp-date m-0">JAN 2018-PRESENT</p>
+                </div>
+              </div>
+            </div>
+            <div class="achievment mt-5">
+              <div class="head d-flex justify-content-between">
+                <h5 class="mb-4">
+                  Achievments
+                  <span
+                    class="px-2 rounded-4 text-light fw-normal fs-6"
+                    style="background-color: #e98016"
+                    >12</span
+                  >
+                </h5>
+                <a href="#" class="text-decoration-none" style="color: #e98016"
+                  >View all</a
+                >
+              </div>
+              <div class="ach__container d-flex flex-column gap-3 px-5 py-4">
+                <div
+                  class="ach pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="ach__item d-flex gap-3 align-items-center">
+                    <img
+                      src="assets/images/MentorInfoPage/achieve.png"
+                      alt="achievement"
+                    />
+                    <p class="fw-bold mb-1">300 Mentorship Minutes</p>
+                  </div>
+                  <p class="ach-date m-0">28 Nov, 2023</p>
+                </div>
+                <div class="hr"></div>
+                <div
+                  class="ach pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="ach__item d-flex gap-3 align-items-center">
+                    <img
+                      src="assets/images/MentorInfoPage/achieve.png"
+                      alt="achievement"
+                    />
+                    <p class="fw-bold mb-1">300 Mentorship Minutes</p>
+                  </div>
+                  <p class="ach-date m-0">28 Nov, 2023</p>
+                </div>
+                <div class="hr"></div>
+                <div
+                  class="ach pb-3 d-flex align-items-center justify-content-between"
+                >
+                  <div class="ach__item d-flex gap-3 align-items-center">
+                    <img
+                      src="assets/images/MentorInfoPage/achieve.png"
+                      alt="achievement"
+                    />
+                    <p class="fw-bold mb-1">300 Mentorship Minutes</p>
+                  </div>
+                  <p class="ach-date m-0">28 Nov, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section>
+        <div class="container text-center text-md-start my-5 pt-4">
+          <div class="d-md-flex justify-content-between mt-3">
+            <div class="mb-4">
+              <h5 class="mb-3">Platform</h5>
+              <div class="links d-flex flex-column gap-2">
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Mentors</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Courses</a
+                >
+                <a href="#" class="text-decoration-none text-dark">Roadmaps</a>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Browse Jobs</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Become Mentors</a
+                >
+                <a href="#" class="text-decoration-none text-dark"
+                  >Become Instructor</a
+                >
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-3">Resources</h5>
+              <div class="links d-flex flex-column gap-2">
+                <a href="#!" class="text-decoration-none text-dark">Blogs</a>
+                <a href="#!" class="text-decoration-none text-dark"
+                  >Newsletter</a
+                >
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-3">About</h5>
+              <p>
+                <a href="#!" class="text-decoration-none text-dark">About Us</a>
+              </p>
+            </div>
+
+            <div class="mb-md-0 mb-4">
+              <h5 class="mb-3">Support</h5>
+              <div class="d-flex flex-column gap-2">
+                <a href="#" class="text-decoration-none text-dark">FAQ</a>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+
+            <div class="d-flex flex-column mb-md-0 mb-4">
+              <h5 class="mb-3">Social Media</h5>
+              <div class="media__icons d-flex gap-2 justify-content-center">
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/facebookIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/linkedinIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/youtubeIcon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/images/footer/Xicon.png"
+                      alt="facebook-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <img
+              src="assets/images/footer/Logofooter.png"
+              alt="VegaLogoFooter"
+              class="footerLogo pt-3"
+            />
+          </a>
+        </div>
+      </section>
+      <div
+        class="d-md-flex gap-5 p-2 border-top container border-2 border-dark"
+      >
+        <p>Copyrights @ 2023 Vega Inc. All rights reserved</p>
+        <a class="text-decoration-none text-dark" href="#">Privacy policy</a>
+        <a class="text-decoration-none text-dark" href="#">Cookies policy</a>
+        <a class="text-decoration-none text-dark" href="#">Terms</a>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <script src="assets/js/mentorInfoPage/mentorinfo.js"></script>
+  </body>
+</html>

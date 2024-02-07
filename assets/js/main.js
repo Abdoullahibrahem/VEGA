@@ -14,20 +14,3 @@ function removeActiveClasses() {
 }
 
 // //////////////////////
-
-// const nextButton = document.querySelector("#next");
-// const prevButton = document.querySelector("#prev");
-
-// // const glide = new Glide("#glide", config);
-
-// nextButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-
-//   glide.go(">");
-// });
-
-// prevButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-
-//   glide.go("<");
-// });
