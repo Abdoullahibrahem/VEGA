@@ -177,9 +177,7 @@ input[type="radio"]:checked + label:before {
   border: 1px solid #cdcdcd;
   border-radius: 8px;
 }
-/* .experience .xp__container .xp {
-  border-bottom: 1px solid #cdcdcd;
-} */
+
 .experience .xp__container .xp .xp-date {
   font-size: 12px;
   font-weight: 500;
@@ -196,4 +194,160 @@ input[type="radio"]:checked + label:before {
   font-size: 12px;
   font-weight: 500;
   color: var(--secondaryText-color);
+}
+
+.booking {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  overflow-y: scroll;
+
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+.hidden {
+  display: none;
+}
+.booking .closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+.session__book-info {
+  flex: 1.8;
+}
+.booking__steps {
+  flex: 2;
+}
+
+.session__book-info .session__book-mentordata {
+  padding: 16px 0px;
+  border-bottom: 1px #d1d3d4 solid;
+}
+.session__book-info .session__book-mentordata img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.step {
+  border-left: 1px #d1d3d4 solid;
+}
+
+/* calendar */
+.wrapper {
+  background: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); */
+}
+.wrapper header {
+  display: flex;
+  padding: 10px 20px 0px;
+  justify-content: space-between;
+}
+header .icons {
+  display: flex;
+}
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child {
+  margin-right: -10px;
+}
+header .icons span:hover {
+  background: #f2f2f2;
+}
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: var(--primary-color);
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+.step form button {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #e98016;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.step .slots h6 {
+  border-bottom: 1px #d1d3d4 solid;
 }

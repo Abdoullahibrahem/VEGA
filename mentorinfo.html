@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-lg shadow">
+    <nav class="navbar fixed-top z-1 navbar-expand-lg shadow">
       <div class="container-fluid px-5">
         <a class="navbar-brand pe-lg-3" href="index.html"
           ><img src="assets/images/Logo.png" alt="Logo"
@@ -87,7 +87,6 @@
             </li>
           </ol>
         </div>
-        <!-- breadcrumb -->
         <div class="profile__header pt-5">
           <div class="mentor__header--info">
             <div class="mentor__img">
@@ -216,7 +215,7 @@
                   />
                   <p class="m-0">Expect responses in 2 days</p>
                 </div>
-                <button class="mb-3">Apply now</button>
+                <button class="bookBtn mb-3">Apply now</button>
                 <div class="d-flex gap-2 mb-2 align-items-center">
                   <img src="assets/images/MentorInfoPage/mark.png" alt="mark" />
                   <p class="m-0 text-muted">Flat fee, no hidden costs</p>
@@ -280,7 +279,7 @@
                   </label>
                 </div>
 
-                <button>Book Now</button>
+                <button class="bookBtn">Book Now</button>
               </form>
             </div>
           </div>
@@ -502,6 +501,93 @@
           </div>
         </div>
       </div>
+
+      <!-- booking -->
+      <div class="booking hidden px-3 pt-5">
+        <img
+          class="closeBtn"
+          src="assets/images/MentorInfoPage/close-circle.png"
+          alt="..."
+        />
+        <div class="px-lg-2 d-lg-flex gap-3">
+          <div class="session__book-info">
+            <div
+              class="session__book-mentordata d-flex gap-3 align-items-center"
+            >
+              <img src="assets/images/heroPerson1.jpg" alt="..." />
+              <div class="d-flex flex-column gap-1">
+                <h6 class="m-0">Mariam Gamal</h6>
+                <p class="m-0 text-muted">
+                  Ux Leader & Career Coach at Ex-Adobe
+                </p>
+              </div>
+            </div>
+            <h6 class="mt-3">Portfolio feedback</h6>
+            <div class="price mt-3">
+              <p class="text-muted mb-2">price</p>
+              <h6>500 Egp</h6>
+            </div>
+            <div class="duration mt-3">
+              <p class="text-muted mb-2">Session duration</p>
+              <h6>45 minutes, Weekly, 3 sessions</h6>
+            </div>
+            <div class="about mt-3">
+              <p class="text-muted mb-2">About</p>
+              <p>
+                Unlock the keys to landing your dream UX job with personalized
+                guidance. Overcome portfolio challenges, nail job interviews,
+                and confidently step into the UX career of your dreams.
+                Challenges: - Struggling to stand out with your portfolio. -
+                Overcoming imposter syndrome.
+              </p>
+            </div>
+          </div>
+          <div class="booking__steps">
+            <div class="step ps-lg-4">
+              <p>step 1 of 3</p>
+              <h4>Select date and time</h4>
+              <p>In your local time zone (Africa/Cairo)</p>
+              <div class="wrapper">
+                <header>
+                  <p class="current-date fs-5"></p>
+                  <div class="icons">
+                    <span id="prev" class="material-symbols-rounded"><</span>
+                    <span id="next" class="material-symbols-rounded">></span>
+                  </div>
+                </header>
+                <div class="calendar pb-1">
+                  <ul class="weeks">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>T</li>
+                    <li>W</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>S</li>
+                  </ul>
+                  <ul class="days"></ul>
+                </div>
+              </div>
+              <form action="">
+                <button type="submit" class="mb-3">Continue</button>
+              </form>
+            </div>
+            <div class="step ps-lg-4">
+              <p>step 2 of 3</p>
+              <h4>Select available time</h4>
+              <p class="text-muted">In your local time zone (Africa/Cairo)</p>
+              <p>
+                <span class="text-muted">Date</span>: Monday, 7 July - 21 July ,
+                2024
+              </p>
+              <div class="slots">
+                <h6 class="pb-2 text-muted">Available time slots</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
     </section>
 
     <!-- FOOTER -->
