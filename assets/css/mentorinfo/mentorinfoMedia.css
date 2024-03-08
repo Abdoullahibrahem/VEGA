@@ -79,3 +79,12 @@
 
 @media (max-width: 320px) {
 }
+
+/*//////////////////// */
+/* height */
+
+@media (max-height: 678px) {
+  .booking {
+    overflow-y: scroll;
+  }
+}

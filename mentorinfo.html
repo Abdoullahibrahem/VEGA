@@ -511,10 +511,12 @@
         />
         <div class="px-lg-2 d-lg-flex gap-3">
           <div class="session__book-info">
-            <div
-              class="session__book-mentordata d-flex gap-3 align-items-center"
-            >
-              <img src="assets/images/heroPerson1.jpg" alt="..." />
+            <div class="session__book-mentordata">
+              <img
+                src="assets/images/heroPerson1.jpg"
+                class="float-start me-3"
+                alt="..."
+              />
               <div class="d-flex flex-column gap-1">
                 <h6 class="m-0">Mariam Gamal</h6>
                 <p class="m-0 text-muted">
@@ -542,8 +544,9 @@
               </p>
             </div>
           </div>
+          <div class="vr"></div>
           <div class="booking__steps">
-            <div class="step ps-lg-4">
+            <div class="step ps-lg-4" id="step1">
               <p>step 1 of 3</p>
               <h4>Select date and time</h4>
               <p>In your local time zone (Africa/Cairo)</p>
@@ -556,7 +559,7 @@
                   </div>
                 </header>
                 <div class="calendar pb-1">
-                  <ul class="weeks">
+                  <ul class="weeks m-0">
                     <li>S</li>
                     <li>M</li>
                     <li>T</li>
@@ -565,23 +568,90 @@
                     <li>F</li>
                     <li>S</li>
                   </ul>
-                  <ul class="days"></ul>
+                  <ul class="days mb-0"></ul>
                 </div>
               </div>
-              <form action="">
-                <button type="submit" class="mb-3">Continue</button>
-              </form>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img
+                  src="assets/images/MentorInfoPage/info-circle.png"
+                  alt="..."
+                />
+                <p class="m-0 notice-date">This session will be</p>
+              </div>
+              <button class="nextBtn mb-3 btn">Continue</button>
             </div>
-            <div class="step ps-lg-4">
+            <div class="step hidden ps-lg-4" id="step2">
+              <img
+                class="prevBtn"
+                src="assets/images/MentorInfoPage/arrow-circle-left.png"
+                alt="..."
+              />
               <p>step 2 of 3</p>
               <h4>Select available time</h4>
               <p class="text-muted">In your local time zone (Africa/Cairo)</p>
-              <p>
-                <span class="text-muted">Date</span>: Monday, 7 July - 21 July ,
-                2024
-              </p>
+              <p class="final-date notice"></p>
               <div class="slots">
                 <h6 class="pb-2 text-muted">Available time slots</h6>
+                <div
+                  class="slots-container d-flex mt-4 gap-3 justify-content-center flex-wrap"
+                ></div>
+                <p class="mt-3 fs-6">
+                  This session is will be on
+                  <span class="result-dateTime notice"></span>
+                </p>
+                <button class="mb-3 nextBtn btn">Continue</button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="step hidden ps-lg-4" id="step3">
+              <img
+                class="prevBtn"
+                src="assets/images/MentorInfoPage/arrow-circle-left.png"
+                alt="..."
+              />
+              <p>step 3 of 3</p>
+              <h4>Confirming your booking</h4>
+              <div class="confirm-dateTime d-flex gap-4">
+                <!-- <p class="m-0">
+                  <img
+                    src="assets/images/MentorInfoPage/calendar.png"
+                    alt="..."
+                  />
+                  Monday, 7 July 2024
+                </p>
+                <p class="m-0">
+                  <img
+                    src="assets/images/MentorInfoPage/clockIcon.png"
+                    alt="..."
+                  />
+                  5:00 Am
+                </p> -->
+              </div>
+
+              <div class="confirm">
+                <h6 class="my-4 text-muted">
+                  Add your questions on this booking
+                </h6>
+                <form action="">
+                  <textarea
+                    class="mb-4"
+                    placeholder="Write your question"
+                  ></textarea>
+                </form>
+                <a class="mb-3 nextBtn btn" href="mentorPayment.html"
+                  >Continue to payment</a
+                >
+                <div class="shield d-flex gap-2 align-items-center p-2">
+                  <img
+                    class=""
+                    src="assets/images/MentorInfoPage/shield-tick.png"
+                    alt="ShieldIcon"
+                  />
+                  <p class="m-0 text-muted">
+                    Your payment method will only be charged once your booking
+                    is confirmed within 3 days.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
