@@ -72,6 +72,7 @@ const book = document.querySelectorAll(".bookBtn");
 const close = document.querySelector(".closeBtn");
 const overLay = document.querySelector(".overlay");
 const bookingForm = document.querySelector(".booking");
+const arrDate = [];
 
 book.forEach((el) =>
   el.addEventListener("click", function () {
@@ -92,10 +93,13 @@ const prev = document.querySelectorAll(".prevBtn");
 
 function nextStep() {
   const currentDiv = document.getElementById("step" + currentStep);
-  currentDiv.classList.add("hidden");
-  currentStep++;
-  const nextDiv = document.getElementById("step" + currentStep);
-  nextDiv.classList.remove("hidden");
+  if (arrDate.length != 0) {
+    console.log("alo");
+    currentDiv.classList.add("hidden");
+    currentStep++;
+    const nextDiv = document.getElementById("step" + currentStep);
+    nextDiv.classList.remove("hidden");
+  }
 }
 
 function prevStep() {
@@ -105,7 +109,9 @@ function prevStep() {
   const prevDiv = document.getElementById("step" + currentStep);
   prevDiv.classList.remove("hidden");
 }
-next.forEach((el) => el.addEventListener("click", nextStep));
+next.forEach((el) => {
+  el.addEventListener("click", nextStep);
+});
 prev.forEach((el) => el.addEventListener("click", prevStep));
 ////////////////////////////////////////////////////
 
@@ -192,7 +198,6 @@ prevNextIcon.forEach((icon) => {
 });
 
 // select session Date
-const arrDate = [];
 
 const selectDate = function () {
   // select a day
@@ -252,6 +257,7 @@ const selectSlot = function () {
     // display selected time to the user
     result.textContent = `${arrDate[1]}`;
     displaySessionDate(arrDate);
+    localStorage.setItem("dateAndTime", arrDate);
     return arrDate;
   });
 };

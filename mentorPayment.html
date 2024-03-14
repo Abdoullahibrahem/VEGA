@@ -65,144 +65,167 @@
         </div>
       </div>
     </nav>
+    <div class="d-lg-flex mt-5 container gap-4">
+      <div class="checkout w-100">
+        <div class="container">
+          <h1 class="mb-4">Checkout</h1>
 
-    <section class="checkout mt-4">
-      <div class="container">
-        <h1>Checkout</h1>
-
-        <h3 class="fw-normal">Payment</h3>
-        <h5>Choose your payment Method</h5>
-        <div class="method-tabs d-flex gap-4">
-          <div
-            class="tab active d-flex align-items-center justify-content-between w-100"
-          >
-            <p class="m-0">Credit card</p>
-            <div class="radioBtn">
-              <div class="innerRadio radioActive"></div>
+          <h3 class="fw-normal mb-4">Payment</h3>
+          <h5 class="mb-3">Choose your payment Method</h5>
+          <div class="method-tabs d-flex gap-4">
+            <div
+              class="tab active d-flex align-items-center justify-content-between w-100"
+            >
+              <p class="m-0">Credit card</p>
+              <div class="radioBtn" data-tab="1">
+                <div class="innerRadio radioActive"></div>
+              </div>
+            </div>
+            <div
+              class="tab d-flex align-items-center justify-content-between w-100"
+            >
+              <p class="m-0">Fawry</p>
+              <div class="radioBtn" data-tab="2">
+                <div class="innerRadio"></div>
+              </div>
             </div>
           </div>
-          <div
-            class="tab d-flex align-items-center justify-content-between w-100"
+          <form
+            action="Get"
+            class="payment-form mt-3 d-flex flex-column gap-3"
+            id="form-1"
           >
-            <p class="m-0">Fawry</p>
-            <div class="radioBtn">
-              <div class="innerRadio"></div>
+            <div class="d-flex flex-column gap-2">
+              <label for="name" class="d-block">Name on card</label>
+              <input
+                type="text"
+                id="card-name"
+                placeholder="Name on card"
+                class="w-100 p-2"
+                required
+              />
             </div>
-          </div>
+
+            <div class="d-flex flex-column gap-2">
+              <label for="num" class="d-block">Card number</label>
+              <input
+                type="text"
+                id="card-num"
+                placeholder="Card number"
+                class="w-100 p-2"
+                required
+              />
+            </div>
+
+            <div class="d-lg-flex gap-3">
+              <div class="d-flex flex-column gap-2 w-100">
+                <label for="expire" class="d-block">Expiry date</label>
+                <input
+                  type="text"
+                  id="expire"
+                  placeholder="MM/YY"
+                  class="w-100 p-2"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column gap-2 w-100">
+                <label for="CVC" class="d-block">CVC/CVV</label>
+                <input
+                  type="text"
+                  id="CVC"
+                  placeholder="CVC"
+                  class="w-100 p-2"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+          <form action="get" class="payment-form mt-3 hidden" id="form-2">
+            <p>
+              Through Fawry, you can pay in cash at any of Fawry’s stores.
+              Please pay within the specified time mentioned in the receipt so
+              that your reservation is not automatically cancelled.
+            </p>
+            <div class="d-flex flex-column gap-2">
+              <label for="num" class="d-block">Phone number</label>
+              <input
+                type="text"
+                id="num"
+                placeholder="01X-XXXX-XXXX"
+                class="w-100 p-2"
+                required
+              />
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="text-center text-lg-start bg-white text-muted">
-      <section>
-        <div class="container text-center text-md-start my-5 pt-4">
-          <div class="d-md-flex justify-content-between mt-3">
-            <div class="mb-4">
-              <h5 class="mb-3">Platform</h5>
-              <div class="links d-flex flex-column gap-2">
-                <a href="#" class="text-decoration-none text-dark"
-                  >Browse Mentors</a
-                >
-                <a href="#" class="text-decoration-none text-dark"
-                  >Browse Courses</a
-                >
-                <a href="#" class="text-decoration-none text-dark">Roadmaps</a>
-                <a href="#" class="text-decoration-none text-dark"
-                  >Browse Jobs</a
-                >
-                <a href="#" class="text-decoration-none text-dark"
-                  >Become Mentors</a
-                >
-                <a href="#" class="text-decoration-none text-dark"
-                  >Become Instructor</a
-                >
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <h5 class="mb-3">Resources</h5>
-              <div class="links d-flex flex-column gap-2">
-                <a href="#!" class="text-decoration-none text-dark">Blogs</a>
-                <a href="#!" class="text-decoration-none text-dark"
-                  >Newsletter</a
-                >
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <h5 class="mb-3">About</h5>
-              <p>
-                <a href="#!" class="text-decoration-none text-dark">About Us</a>
-              </p>
-            </div>
-
-            <div class="mb-md-0 mb-4">
-              <h5 class="mb-3">Support</h5>
-              <div class="d-flex flex-column gap-2">
-                <a href="#" class="text-decoration-none text-dark">FAQ</a>
-                <a href="#" class="text-decoration-none text-dark"
-                  >Contact Us</a
-                >
-              </div>
-            </div>
-
-            <div class="d-flex flex-column mb-md-0 mb-4">
-              <h5 class="mb-3">Social Media</h5>
-              <div class="media__icons d-flex gap-2 justify-content-center">
-                <div class="icon">
-                  <a href="#"
-                    ><img
-                      src="assets/images/footer/facebookIcon.png"
-                      alt="facebook-icon"
-                    />
-                  </a>
-                </div>
-                <div class="icon">
-                  <a href="#"
-                    ><img
-                      src="assets/images/footer/linkedinIcon.png"
-                      alt="facebook-icon"
-                    />
-                  </a>
-                </div>
-                <div class="icon">
-                  <a href="#"
-                    ><img
-                      src="assets/images/footer/youtubeIcon.png"
-                      alt="facebook-icon"
-                    />
-                  </a>
-                </div>
-                <div class="icon">
-                  <a href="#"
-                    ><img
-                      src="assets/images/footer/Xicon.png"
-                      alt="facebook-icon"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#">
+      <div class="session-details w-100 mt-5">
+        <div class="container session__details--container">
+          <!-- <h5 class="">Session Details</h5>
+          <h2>200 EGP</h2>
+          <p class="m-0 text-muted">Mentor:</p>
+          <div class="session-mentordata">
             <img
-              src="assets/images/footer/Logofooter.png"
-              alt="VegaLogoFooter"
-              class="footerLogo pt-3"
+              src="assets/images/heroPerson1.jpg"
+              class="float-start me-2 mt-1"
+              alt="..."
             />
-          </a>
+            <div class="d-flex flex-column gap-1">
+              <h6 class="m-0">Mariam Gamal</h6>
+              <p class="m-0 text-muted">Ux Leader & Career Coach at Ex-Adobe</p>
+            </div>
+          </div> -->
+
+          <!-- <div class="mt-4">
+            <img
+              src="assets/images/MentorInfoPage/tag.png"
+              class="float-start me-2 mt-1"
+              alt="..."
+            />
+            <div class="d-flex flex-column gap-1">
+              <h6 class="m-0">Portfolio Review</h6>
+              <p class="m-0 text-muted">Topic</p>
+            </div>
+          </div>
+          <div class="mt-2">
+            <img
+              src="assets/images/MentorInfoPage/clockIcon.png"
+              class="float-start me-2 mt-1"
+              alt="..."
+            />
+            <div class="d-flex flex-column gap-1">
+              <h6 class="m-0">5:00</h6>
+              <p class="m-0 text-muted">Time</p>
+            </div>
+          </div>
+          <div class="mt-2">
+            <img
+              src="assets/images/MentorInfoPage/timer.png"
+              class="float-start me-2 mt-1"
+              alt="..."
+            />
+            <div class="d-flex flex-column gap-1">
+              <h6 class="m-0">30 minutes</h6>
+              <p class="m-0 text-muted">Duration</p>
+            </div>
+          </div>
+          <div class="mt-2">
+            <img
+              src="assets/images/MentorInfoPage/calendar.png"
+              class="float-start me-2 mt-1"
+              alt="..."
+            />
+            <div class="d-flex flex-column gap-1">
+              <h6 class="m-0">5 March</h6>
+              <p class="m-0 text-muted">Date</p>
+            </div>
+          </div> -->
+          <!-- </div> -->
+
+          <button class="btn mt-3 submitBtn">Complete Checkout</button>
         </div>
-      </section>
-      <div
-        class="d-md-flex gap-5 p-2 border-top container border-2 border-dark"
-      >
-        <p>Copyrights @ 2024 Vega Inc. All rights reserved</p>
-        <a class="text-decoration-none text-dark" href="#">Privacy policy</a>
-        <a class="text-decoration-none text-dark" href="#">Cookies policy</a>
-        <a class="text-decoration-none text-dark" href="#">Terms</a>
       </div>
-    </footer>
-    <!-- Footer -->
+    </div>
 
     <script src="assets/js/lib/jquery-3.7.1.min.js"></script>
     <script src="assets/js/lib/popper.min.js"></script>

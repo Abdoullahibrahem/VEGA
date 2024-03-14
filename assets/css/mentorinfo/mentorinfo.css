@@ -294,9 +294,7 @@ header .current-date {
   text-align: center;
   padding-left: 0;
 }
-.calendar .days {
-  /* margin-bottom: 20px; */
-}
+
 .calendar li {
   color: #333;
   width: calc(100% / 7);
